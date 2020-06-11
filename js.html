@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- this is a comment -->
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+var isClicked = new Boolean(false);
+
+function myFunction()
+if (isClicked) {
+    document.getElementById("demo").style.color = "black";
+  document.getElementById("demo").style.fontSize = "small";
+    isClicked = false;
+} else {document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.fontSize = "large";
+    isClicked = true;
+} ;
+</script>
+
+</body>
+</html>
